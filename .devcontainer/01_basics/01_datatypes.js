@@ -3,9 +3,9 @@
 //semicolon likhna koi zruri nhi h
 //documentation hum tc39 pr aur mdn pr dekhenge
 
-let name = "saksham"
-let age = 3
-let isloggedIn =false
+// let name = "saksham"
+// let age = 3
+// let isloggedIn =false
 
 //#datatypes
 //#primitive datatypes
@@ -19,7 +19,7 @@ let isloggedIn =false
 
 // object aage pdhenge
 
-console.log(typeof null)
-console.log(typeof undefined)
+// console.log(typeof null)  - object
+// console.log(typeof undefined) - undefined
 
 // so hmne dekh ki null ek object hai so ise aage pdhenge 
