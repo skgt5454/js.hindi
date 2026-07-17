@@ -1,7 +1,7 @@
 // objects declare by two methods literal and constructor
 // singleton -- means jb bhi contructor se koi object bnta h to wo hota singleton object
 
-// literal - method to declare object
+// literal
 // const jsUser = {
 //     name : "Hitesh",
 //     age :18,
