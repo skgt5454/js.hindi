@@ -1,0 +1,58 @@
+// function seekhne ke liye hme memory managemnet ka bhi dhyan hona chahiye
+// koi bhi kaam bar -bar krwana ho to us kaam ko ek function me pack kr do then use kr lo
+// function definition or scope
+// function sayMyName()
+// {
+//     connsole.log("h")
+//     console.log('t')
+//     console.log('e')
+//     console.log('s')
+// }
+// sayMyName is a reference of function
+//sayMyName()  // function execution
+  
+// in js we dont want to give type of n1,n2
+// function addtwono(n1,n2) // jo andar diya h wo parameter h
+// {
+//     console.log(n1+n2)
+// }
+// addtwono(3,4) //jo andar diya h wo argument hai
+// addtwono(3,"4")// --> 34
+// addtwono(3,null)// -->3
+
+//console.log()  only ji iske andar h wo hrr baar print krta h 
+// but return hmesha value return krta h function ko then phir hm use print krwa skte h
+// const result = addtwono(3,8)
+// console.log("result :" ,result)  //-->undefined
+
+// function add(a,b)
+// {
+//     let res = a + b
+//     console.log("hhh")
+//     return res;
+//     console.log("hitesh") // ek rule h function ka ki return ke baad jo likha hua h vo kbhi kaam nhi krta
+// }
+//  let res = add(2,4)
+//  console.log("result: ",res) // -->hhh and  result = 6
+//  // here res in and out the function are different ye baad me hum scope me describe krenge
+   
+//  //agr hm argument hi na de to vo return krta h undefined 
+//  // and agr empty string ho to kuch return nhi krta
+// function lol(userno)
+// {
+//     return `${userno} is a big number`
+// }
+// console.log(lol())// -- >undefined is a big number
+// console.log(lol("")) // is a big number
+// console.log(lol("2")) // 2 is a big number
+// console.log(lol(2)) // 2 is a big number
+function lola(usern){ // hmm idhar hi usern ki ek default value de skte h agr argument nhi bhi diya gya to default value function me use honge aur agr hmne argument diya to argument vali value use hogi
+    if(usern ==undefined) // idhar hum == ye bhi use kr skte h 
+    // usern ==undefined hm isko !usern aise bhi likh skte hai
+    {
+        console.log("plese enter a usern")
+        return // jb hmne return me kuch nhi dia aur agr ye block execute hua to ye kuch bhi return nhi krega
+    }
+    return `${usern} is a big number`
+}
+ console.log(lola()) 
