@@ -46,13 +46,57 @@
 // console.log(lol("")) // is a big number
 // console.log(lol("2")) // 2 is a big number
 // console.log(lol(2)) // 2 is a big number
-function lola(usern){ // hmm idhar hi usern ki ek default value de skte h agr argument nhi bhi diya gya to default value function me use honge aur agr hmne argument diya to argument vali value use hogi
-    if(usern ==undefined) // idhar hum == ye bhi use kr skte h 
-    // usern ==undefined hm isko !usern aise bhi likh skte hai
-    {
-        console.log("plese enter a usern")
-        return // jb hmne return me kuch nhi dia aur agr ye block execute hua to ye kuch bhi return nhi krega
-    }
-    return `${usern} is a big number`
-}
- console.log(lola()) 
+// function lola(usern){ // hmm idhar hi usern ki ek default value de skte h agr argument nhi bhi diya gya to default value function me use honge aur agr hmne argument diya to argument vali value use hogi
+//     if(usern ==undefined) // idhar hum == ye bhi use kr skte h 
+//     // usern ==undefined hm isko !usern aise bhi likh skte hai
+//     {
+//         console.log("plese enter a usern")
+//         return // jb hmne return me kuch nhi dia aur agr ye block execute hua to ye kuch bhi return nhi krega
+//     }
+//     return `${usern} is a big number`
+// }
+//  console.log(lola()) 
+
+ 
+
+ function calculatecartprice(num1)
+ {
+    return num1
+ }
+//  console.log(calculatecartprice(2)) // 2
+//  console.log(calculatecartprice(200,400,500)) // 200
+ // is problem solve kre ke liye rest operator
+//  function calcartprice(...num1) // ... isiko rest/spread operator bola jaata h but yha ise rest operator bolte h
+//  {
+//     return num1
+//  }
+
+//  console.log(calcartprice(200,400,500)) //-> ye return krega ek array 200,400,500 ka so rest method se hum sare numbers ek array me laa skte h and baad me loop lga kar iska summation nikal skte hai
+
+// function calcartprice(val1,val2,...num1) // ... isiko rest/spread operator bola jaata h but yha ise rest operator bolte h
+// {
+//     return num1
+// }
+//  console.log(calcartprice(100,200,300,400)) // so idhar kya hua val1 me 100,val2 me 200 gyi and vaki ki print ho gyi array me
+ 
+
+     // function me object
+// const user = {username:"saksham",price:199}
+// function handleobject(anyobject) // idhar ye jo anyobject h ye user hi h leki hmne generalise krke likha hua h anyobject mtlb koi bhi object
+// {
+//     console.log(`username is ${anyobject.username} and the price is ${anyobject.price}`)
+// }
+
+// // handleobject(user)
+// // handleobject({username : "sam","price": 100}) // aise bhi pass kr skte h
+
+// // function me arrays 
+
+// const mynewArray = [200,300,400]
+
+// function secvalue(getArray)
+// {
+//     return getArray[1]
+// }
+// console.log(secvalue(mynewArray))
+
