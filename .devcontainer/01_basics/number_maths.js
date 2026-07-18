@@ -1,3 +1,15 @@
+const lm = 400
+
+const balance = new Number(400)
+console.log(balance.toFixed(1))  // 400.0
+const othern = 500.1247
+// precision is very useful while making an ecommerce websites in the prices precision
+console.log(othern.toPrecision(2))  // 5.0e+2
+console.log(othern.toPrecision(5)) //500.12
+
+const lmg = 1000000
+console.log(lmg.toLocaleString('en-IN')) // 10,00,000 ye indian standar me h age en-IN nhi denge to us standard me value aayegi
+
 /////++++++++++ MATHS++++++++////////
 // math is an object in js 
 // console.log(Math) ---> object 
@@ -15,5 +27,5 @@
 
 // const min = 10
 // const max = 20
-console.log(Math.floor(Math.random()*(max-min+1))+min) // agr mujhe chahiye 10 se 20 ke beech me ho value
+// console.log(Math.floor(Math.random()*(max-min+1))+min) // agr mujhe chahiye 10 se 20 ke beech me ho value
 // formula --> 
