@@ -1,0 +1,21 @@
+//IIFE - imeediate invoked function expressions
+// YE iife use hota h global scope me koi variable ho aur usse function execute krte h to problem hoti h hai  to tb hume function imeediately execute krwana h aur aur ye global scope ke pollution se bachna h. to hum iife use krte h
+// ()() =>it is called iife ist parenthesis is jaha function likhne wale h and 2nd parenthesis is jaha  function call
+ // IIFE
+(function chai() // name iife
+{console.log(`DB CONNECTED`)    
+}
+)();// DB CONNECTED // mujhe idhar ek semicolon lgana hoga kyuki ye invoke function hai ek baar invoke to ho jaata h pr ise pta nhi h ki context rokhna kha h.kyuki agr nhi lgaenge to aage wale function me dikkat aaegi
+ //  ab hum arrow function bhi use kr skte h
+
+(() =>
+    {
+    console.log("db jfbdj")}
+)(); // db jfbdj
+ 
+( (name) => {
+    console.log(`hbh hi i am ${name}`)
+}
+) ("saksham") // hbh hi i am saksham
+
+
