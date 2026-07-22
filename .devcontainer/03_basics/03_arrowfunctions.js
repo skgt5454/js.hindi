@@ -7,7 +7,8 @@
 //         console.log(this) // ye current context ki baat krta h saari values vagera deta h
 //     }
 // }
-//user.welmess()
+// user.welmess() // objects se function ko print krne ka tarika
+//console.log(this) // {} // kyunki abhi global ke andar context hi nhi h
 //saksham, welcome the guest
 // { username: 'saksham', price: 99, welmess: [Function: welmess] }
 
@@ -21,20 +22,22 @@
 // function chai()
 // {
 //     let username = "sak"
-//     // console.log(this.username) // undefined means ye context only objects pr kaam kr rha h functions pe nhi
-//     //console.log(username)
+//      //console.log(this.username) // undefined means ye context only objects pr kaam kr rha h functions pe nhi
+//     // console.log(username)
 //     console.log(this)
 // }
 // chai()
+// console.log(this) // This is because in a CommonJS module, the top-level this refers to module.exports, which starts as an empty object {}.
 // ab iske andar bhutsari cheeze print ho jayegi kyuki this function ke andar hai
 
 /// arrow functions
- let username = "saksham"
-const chai = () =>{
-    
-    console.log(this.username)
-}
-chai()
+//  let username = "saksham"
+// const chai = () =>{
+//     console.log(this.username)
+// }
+// chai()
+
+
 // is baar this  function ke bahr print krwao ya andar aaega ye {} 
 
 // here addtwo is a variable in which  stored in the function
